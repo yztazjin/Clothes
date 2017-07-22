@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.ttyy.tskin.demo.MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="@dimen/text_width"
+        android:layout_height="@dimen/text_height"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:background="@drawable/selector_text"/>
+
+    <TextView
+        android:id="@+id/tv_hello1"
+        android:layout_width="@dimen/text_width"
+        android:layout_height="@dimen/text_height"
+        android:text="@string/app_name"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:background="@drawable/selector_text"/>
+
+</LinearLayout>
