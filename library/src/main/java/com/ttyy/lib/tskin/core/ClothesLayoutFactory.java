@@ -67,9 +67,7 @@ public class ClothesLayoutFactory implements LayoutInflater.Factory{
         ClothesView controlView = ClothesView.from(attrs, view);
         if(controlView != null){
             Clothes.get().manageSkinView(key, controlView);
-            Clothes.get().setClothingView(controlView);
             controlView.apply();
-            Clothes.get().setClothingView(null);
         }
     }
 

@@ -166,12 +166,10 @@ public class Clothes {
             return this;
         }else {
             for(ClothesView tmp : views){
-                setClothingView(tmp);
                 tmp.apply();
             }
         }
 
-        setClothingView(null);
         return this;
     }
 
@@ -186,13 +184,11 @@ public class Clothes {
                 continue;
             }else {
                 for(ClothesView view : tmpList){
-                    setClothingView(view);
                     view.apply();
                 }
             }
         }
 
-        setClothingView(null);
         return this;
     }
 
@@ -206,6 +202,7 @@ public class Clothes {
     }
 
     public Clothes setClothingView(ClothesView view){
+
         this.mClothingView = view;
         return this;
     }

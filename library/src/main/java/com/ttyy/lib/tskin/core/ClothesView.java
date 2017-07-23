@@ -19,7 +19,7 @@ import java.util.Map;
  * desc: TSKinVie
  */
 
-public class ClothesView {
+public final class ClothesView {
 
     View mTargetView;
 
@@ -113,9 +113,11 @@ public class ClothesView {
     }
 
     public void apply(){
+        Clothes.get().setClothingView(this);
         for(ControlAttr tmp : mControlledAttrs){
             tmp.apply();
         }
+        Clothes.get().setClothingView(null);
     }
 
     /**
