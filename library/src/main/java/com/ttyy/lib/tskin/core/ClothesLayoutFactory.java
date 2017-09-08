@@ -29,6 +29,10 @@ public class ClothesLayoutFactory implements LayoutInflater.Factory{
 
         View view = null;
 
+        if(name.equals("ViewStub")){
+            return null;
+        }
+
         if(ClothesLayoutFactoryForSupportV7.isViewFromSupportV7(name)){
             view = ClothesLayoutFactoryForSupportV7.createView(name, context, attrs);
             return view;
