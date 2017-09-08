@@ -1,7 +1,6 @@
 package com.ttyy.lib.tskin.core;
 
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.ttyy.lib.tskin.Clothes;
@@ -81,7 +80,6 @@ public final class ClothesView {
             return null;
 
         ClothesView skinedView = new ClothesView(view);
-        Log.e("Test", "view "+view+" "+view.getId());
         for(int i = 0; i < attrs.getAttributeCount(); i++){
             // 属性名称
             // android:xxxx
