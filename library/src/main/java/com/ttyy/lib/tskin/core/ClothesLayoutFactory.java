@@ -28,6 +28,12 @@ public class ClothesLayoutFactory implements LayoutInflater.Factory{
     public View onCreateView(String name, Context context, AttributeSet attrs) {
 
         View view = null;
+
+        if(ClothesLayoutFactoryForSupportV7.isViewFromSupportV7(name)){
+            view = ClothesLayoutFactoryForSupportV7.createView(name, context, attrs);
+            return view;
+        }
+
         try {
             int index = name.indexOf(".");
             if (index == -1) {
